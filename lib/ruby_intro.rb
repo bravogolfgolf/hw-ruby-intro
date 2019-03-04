@@ -7,7 +7,7 @@ def sum arr
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  arr.max(2).sum
 end
 
 def sum_to_n? arr, n
