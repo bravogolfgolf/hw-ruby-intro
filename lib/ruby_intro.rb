@@ -21,11 +21,15 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  'Hello, ' + name
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  starts_with_vowel = /^[aeiouAEIOU]/
+  return false if (s =~ starts_with_vowel)
+  
+  starts_with_letter = /^[a-zA-Z]/
+  return true if (s =~ starts_with_letter)
 end
 
 def binary_multiple_of_4? s
