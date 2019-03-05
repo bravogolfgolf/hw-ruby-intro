@@ -11,7 +11,11 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  return false if arr.size < 2
+  arr.combination(2).to_a.each do |item|
+    return true if max_2_sum(item) == n
+  end
+  false
 end
 
 # Part 2
